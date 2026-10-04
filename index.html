@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Weather Monitoring</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>🌦️ Weather Monitoring System</h1>
+            <p>Real-Time Temperature & Humidity Monitoring</p>
+        </header>
+
+        <div class="status">
+            <span class="dot"></span>
+            Sensor Connected
+        </div>
+
+        <section class="weather-cards">
+
+            <div class="card temperature">
+                <div class="icon">🌡️</div>
+                <h2>Temperature</h2>
+                <p id="temperature">-- °C</p>
+            </div>
+
+            <div class="card humidity">
+                <div class="icon">💧</div>
+                <h2>Humidity</h2>
+                <p id="humidity">-- %</p>
+            </div>
+
+            <div class="card pressure">
+                <div class="icon">🌬️</div>
+                <h2>Pressure</h2>
+                <p id="pressure">-- hPa</p>
+            </div>
+
+        </section>
+
+        <section class="info">
+
+            <div>
+                <h3>Last Updated</h3>
+                <p id="time">--</p>
+            </div>
+
+            <div>
+                <h3>Weather Condition</h3>
+                <p id="condition">Checking...</p>
+            </div>
+
+        </section>
+
+        <section class="chart-section">
+            <h2>Temperature History</h2>
+
+            <div id="chart" class="chart">
+                <div class="bar" style="height: 40%"></div>
+                <div class="bar" style="height: 50%"></div>
+                <div class="bar" style="height: 45%"></div>
+                <div class="bar" style="height: 65%"></div>
+                <div class="bar" style="height: 55%"></div>
+                <div class="bar" style="height: 70%"></div>
+                <div class="bar" style="height: 60%"></div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Smart Weather Monitoring System</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
